@@ -1,13 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿//-----------------------------------------------------------------------
+// <copyright file="ViewModel.cs" company="Philipp Kühn">
+//     Copyright (c) Philipp Kühn. All rights reserved.
+// </copyright>
+//-----------------------------------------------------------------------
 namespace ViewModelBase
 {
+    using System;
+    using System.ComponentModel;
+    using System.Linq;
+    using System.Reflection;
+    using System.Threading.Tasks;
+
+
     /// <summary>
     /// The view Model base class.
     /// </summary>
@@ -25,12 +29,14 @@ namespace ViewModelBase
             initializationTask.Start();
         }
 
+
         /// <summary>
         /// Initializes this instance.
         /// </summary>
         protected virtual void Initialize()
         {
         }
+
 
         /// <summary>
         /// Callback method for the async initialization.
@@ -50,8 +56,7 @@ namespace ViewModelBase
         /// Occurs when the initialization is completed.
         /// </summary>
         public event AsyncCompletedEventHandler InitializationCompleted;
-        #region INotifyPropertyChanged Members
-        
+
         /// <summary>
         /// Called when a property has changed.
         /// </summary>
@@ -62,11 +67,14 @@ namespace ViewModelBase
             PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
         }
 
+        #region INotifyPropertyChanged Members
+
         /// <summary>
         /// Occurs when a property value changes.
         /// </summary>
         /// <remarks></remarks>
         public event PropertyChangedEventHandler PropertyChanged;
+
         #endregion
     }
 
@@ -119,6 +127,7 @@ namespace ViewModelBase
             }
         }
 
+
         /// <summary>
         /// Initializes a new instance of the <see cref="ViewModel"/> class.
         /// </summary>
@@ -126,14 +135,14 @@ namespace ViewModelBase
         protected ViewModel(TModel model)
             : base()
         {
-            this.model = model;
+            this.Model = model;
         }
 
         /// <summary>
         /// Returns a hash code for this instance.
         /// </summary>
         /// <returns>
-        /// A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table.
+        /// A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
         /// </returns>
         public override int GetHashCode()
         {
@@ -152,12 +161,14 @@ namespace ViewModelBase
             if (obj == null)
                 return false;
 
+            var other = obj as IViewModel<TModel>;
 
-            if (!(obj is IViewModel<TModel> other))
+            if (other == null)
                 return false;
 
             return Equals(other);
         }
+
 
         /// <summary>
         /// Determines whether the specified <see cref="IViewModel<TModel>"/> is equal to this instance.
