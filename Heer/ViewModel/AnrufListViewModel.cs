@@ -5,7 +5,7 @@ using System.Windows.Input;
 using Model;
 using ViewModelBase;
 
-namespace ViewModel
+namespace View
 {
     public class AnrufListViewModel : ViewModelBase.ViewModel
     {

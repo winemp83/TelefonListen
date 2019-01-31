@@ -12,25 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using View;
 
-namespace StartApplication
+namespace View
 {
     /// <summary>
-    /// Interaktionslogik für MainWindow.xaml
+    /// Interaktionslogik für AnrufeListView2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AnrufeListView2 : UserControl
     {
-        public MainWindow()
+        public AnrufeListView2()
         {
             InitializeComponent();
-            SetupBindings();
-        }
-
-        private void SetupBindings()
-        {
-            var viewModel = new AnrufListViewModel();
-            personListView.DataContext = viewModel;
         }
     }
 }

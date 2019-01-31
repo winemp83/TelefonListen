@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{702D52C2-5358-468D-89F5-2CE4E1B7A057}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelOutput", "ModelOutput\ModelOutput.csproj", "{02180005-C29A-4AD8-AB57-E0BC7917CB57}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModelBase", "ViewModelBase\ViewModelBase.csproj", "{5B3F7003-6F27-48B5-A288-CB30A8853A40}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModel", "ViewModel\ViewModel.csproj", "{2CFD8065-1CBC-4F6A-AD7F-5A9D9B70AEC4}"
@@ -25,10 +23,6 @@ Global
 		{702D52C2-5358-468D-89F5-2CE4E1B7A057}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{702D52C2-5358-468D-89F5-2CE4E1B7A057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{702D52C2-5358-468D-89F5-2CE4E1B7A057}.Release|Any CPU.Build.0 = Release|Any CPU
-		{02180005-C29A-4AD8-AB57-E0BC7917CB57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{02180005-C29A-4AD8-AB57-E0BC7917CB57}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{02180005-C29A-4AD8-AB57-E0BC7917CB57}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{02180005-C29A-4AD8-AB57-E0BC7917CB57}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B3F7003-6F27-48B5-A288-CB30A8853A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B3F7003-6F27-48B5-A288-CB30A8853A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B3F7003-6F27-48B5-A288-CB30A8853A40}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -8,6 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <my:AnrufeListView Name="personListView"/>
+        <my:AnrufeListView2 Name="personListView"/>
     </Grid>
 </Window>
